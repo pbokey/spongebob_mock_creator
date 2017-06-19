@@ -14,12 +14,12 @@ def transform(strt):
             if (not splitter[i].isupper()):
                 splitter[i] = splitter[i].upper()
     x = "".join(splitter)
-    img = Image.open("spongebob/img/bob.jpg")
-    font = ImageFont.truetype("spongebob/fonts/HelveticaNeueLt.ttf", 20)
+    img = Image.open("img/bob.jpg")
+    font = ImageFont.truetype("fonts/HelveticaNeueLt.ttf", 20)
     draw = ImageDraw.Draw(img)
     draw.text((20,10), x, (0,0,0), font=font)
     draw = ImageDraw.Draw(img)
-    file_name = 'spongebob/out/' + strt + "_" + suffix + ".jpg"
+    file_name = 'out/' + strt + "_" + suffix + ".jpg"
     img.save(file_name)
     img_new = Image.open(file_name)
     img.show()
