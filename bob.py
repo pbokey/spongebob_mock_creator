@@ -9,6 +9,12 @@ inp = input('Enter text: ')
 def transform(strt):
     splitter = list(strt)
     suffix = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
+    if os.path.exists('/out'):
+        print("True")
+        try:
+            os.makedirs('/out')
+        except OSError as exception:
+            print("directory could not be created, please manually make a folder called 'out' in your current directory")
     for i in range(len(splitter)):
         x = randint(0,1)
         if (x == 1):
