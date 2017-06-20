@@ -3,6 +3,7 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 import datetime
+import os
 
 inp = input('Enter text: ')
 def transform(strt):
@@ -19,7 +20,7 @@ def transform(strt):
     draw = ImageDraw.Draw(img)
     draw.text((20,10), x, (0,0,0), font=font)
     draw = ImageDraw.Draw(img)
-    file_name = 'out/' + strt + "_" + suffix + ".jpg"
+    file_name = "out/{}.jpg".format(suffix)
     img.save(file_name)
     img_new = Image.open(file_name)
     img.show()
