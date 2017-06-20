@@ -10,5 +10,5 @@
 1. git clone this repo
 2. cd into the newly cloned repo
 3. make sure you have python3 and pip installed (pip should have been installed with your python3)
-4. run `pip3 install -r requirements.txt`
-5. run 'python3 bob.py'
+4. in terminal/command line type: `pip3 install -r requirements.txt`
+5. followed by:  `python3 bob.py`
