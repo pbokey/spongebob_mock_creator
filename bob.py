@@ -28,7 +28,6 @@ def transform(strt):
     draw = ImageDraw.Draw(img)
     file_name = "out/{}.jpg".format(suffix)
     img.save(file_name)
-    img_new = Image.open(file_name)
-    img.show()
+    Image.open(file_name).show()
 
 transform(inp)
